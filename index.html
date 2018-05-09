@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+<title>BiTrust - Trust based on BlockChain</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>BiTrust.top</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#token" class="w3-bar-item w3-button">QTT</a>
+	  <a href="#nba" class="w3-bar-item w3-button">NBA playoff</a>
+	   <a href="#worldcup" class="w3-bar-item w3-button">Worldcup </a>
+      <a href="#about" class="w3-bar-item w3-button">Whitepaper</a>
+      <a href="#contact" class="w3-bar-item w3-button">Github</a>
+	  <a href="#contact" class="w3-bar-item w3-button">Q&A</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="img/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>QTT</b></span> <span class="w3-hide-small w3-indigo w3-text-light-grey">A BiTrust Token based on Qtum</span></h1>
+          <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-download"></i> Whitepaper
+      </button>
+  </div>
+</header>
+
+<!-- Page content -->
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>2018 NBA playoff bet -- based on smart contract</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Who will be EAST/WEST/FINAL champion?</b></h1>
+ 
+	  <div class="w3-bar w3-white">
+  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('intro')">Introduction</button>
+  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('contract')">Contract</button>
+  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('logs')">stats</button>
+</div>
+
+<div id="intro" class="w3-container nba">
+  <h2>Bet Champion, Get bonus.</h2>
+  <p> Eastern champion candicates:  BOS and CLE</p>
+  <p> Western champion candicates:  HOU and GSW</p>
+  <p> Final champion candicates:  BOS, CLE, HOU, GSW</p>
+</div>
+
+<div id="contract" class="w3-container nba" style="display:none">
+  <h2>Qtum Contract Address</h2>
+  <p></p> 
+  <h2>ABI</h2>
+  <p>betEastChampionOfNBAPlayOff</p>
+  <p>betWestChampionOfNBAPlayOff</p>
+  <p>betFinalChampionOfNBAPlayOff</p>
+  
+</div>
+
+<div id="logs" class="w3-container nba" style="display:none">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function switchTab(cityName) {
+    var i;
+    var x = document.getElementsByClassName("nba");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-download"></i> Learn more
+      </button>
+     
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="./img/nba.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+        <img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Clarity Section -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="./img/worldcup.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Russia Worldcup bet</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>coming soon....</b></h1>
+
+    </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+  <h1 class="w3-jumbo"><b>Features</b></h1>
+  <p>This app is just so lorem ipsum.</p>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
+      <p>Fast</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+      <p>Loved</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
+      <p>Clarity</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
+      <p>Power</p>
+    </div>
+  </div>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-diamond w3-text-white w3-jumbo"></i>
+      <p>Sharp</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
+      <p>Cloud</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+      <p>Global</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
+      <p>Storage</p>
+    </div>
+  </div>
+  
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-user w3-text-sand w3-jumbo"></i>
+      <p>Safe</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
+      <p>Stabile</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
+      <p>Connected</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-image w3-text-pink w3-jumbo"></i>
+      <p>HD</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">QStake</a></p>
+</footer>
+
+
+</body>
+</html>
