@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<title>BiTrust - Trust based on BlockChain</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="./index.html#home" class="w3-bar-item w3-button"><b>BiTrust.top</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="./index.html#home" class="w3-bar-item w3-button">BTT</a>
+	  <a href="./index.html#nba" class="w3-bar-item w3-button">NBA playoff</a>
+	   <a href="./index.html#worldcup" class="w3-bar-item w3-button">Worldcup</a>
+      <a href="./index.html#reward" class="w3-bar-item w3-button">Rewarding Plan</a>
+      <a href="https://github.com/BitrustProject" class="w3-bar-item w3-button">Github</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<!-- The App Section -->
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
+<div class="w3-sidebar w3-bar-block w3-theme w3-card-2" style="width:165px;">
+  
+  <a href="#nba" class="w3-bar-item w3-button">NBA Playoff Bet</a>
+  <a href="#reward" class="w3-bar-item w3-button">BTT Rewarding plan</a>
+</div>
+<div class="w3-padding w3-card-2" style="margin-left:165px" id="reward">
+<h2>BTT Rewarding Plan</h2>
+<div class="w3-panel w3-pale-yellow w3-border w3-border-yellow">
+  <h4>Participating NBA bet</h4>
+  <p>One Qtum get One BTT reward for any participant. Winner's bonus will get reward again with same rate.
+</div>
+<div class="w3-panel w3-pale-yellow w3-border w3-border-yellow">
+  <h4>Introduct BiTrust.top in your Blog</h4>
+  <p>User who introduce BiTrust in Forum, Blog, Facebook, Twitter, will get reward depends on influence</p>
+</div>
+</div>
+<div class="w3-padding w3-card-2" style="margin-left:165px" id="nba">
+<h2>NBA Play Off Bet</h2>
+<h3>whitepaper</h3>
+	<div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+    <h4>what to bet?</h4>
+    <p>1, NBA Playoff Eastern Final.  2, NBA PlayOff Western Final.  3, NBA PlayOff Final Final.  who will be champion of each match?</p>
+  </div>
+  <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+  
+    <h4>what is the algorithm to calculate bonus?</h4>
+	<p>Let take the match:Eastern Final as example:</p>
+    <p>let A = amount of your betting on team who win champion.</p>
+	<p>let T = amount of all betting on team who win champion.</p>
+	<p>let O = amount of all betting on the match</p>
+	<p>your bonus = A * O / T 
+  </div>
+  <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+    <h4>Is it totally free? </h4>
+    <p>To interact with contract, you have to pay GAS to Qtum miners. The contract only set 1% donation for WINNER only. and it is not mandatory, you are appreciated to donate.if you really don't want to donate, that is fine, you can operate contract interface:setDonationPercent to adjust it. for the sake of programming easy, your inputed percentage will be substracted 1 as your final donation percentage. and, please NOTE, you have to pay GAS for that, we encourage you to donate that GAS to help us better</p>
+  </div>
+  <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+  
+    <h4>when to start?</h4>
+    <p>Every season, once final 4 teams are finalized, the contract start working</p>
+  </div>
+    <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+    <h4>when to stop betting?</h4>
+    <p>Champion have to win 4 of 7 games,  so either of team win 3 games, stop betting.</p>
+  </div>
+      <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+    <h4>how is BTT rewarding?</h4>
+    <p>BTT is BiTrust token based on Qtum, it will be rewarded to any participant of the contract, the rate is:1Qtum get 1 BTT reward. if you finally win, your total bonus will be rewarded again with same rate. </p>
+  </div>
+  <h3>How to participate? </h3>
+<a href="https://qtumeco.io/wallet" target="_blank">Download Qtum PC wallet </a>
+<h4>open Qtum core, paste Contract Address and ABI</h4> 
+ <h3>Contract Address</h3>
+ <p class="w3-code"> 3b1c563849e90449b1c6435b7552d02259efd7f8</p> 
+ <h3>ABI</h3> 
+ <p class="w3-code" id="abi">[{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betEastChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"address"}],"name":"userBetsForTeam","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"tokenAddr","type":"address"}],"name":"setTokenAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betWestChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"name":"teamAmountForBets","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"percent","type":"uint256"}],"name":"setDonationPercent","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"amountForBets","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betFinalChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"t1","type":"string"},{"name":"t2","type":"string"},{"name":"t3","type":"string"},{"name":"t4","type":"string"}],"name":"resetTeams","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"donationPercent","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"catId","type":"uint8"},{"name":"amountToRetrive","type":"uint256"}],"name":"setBetClosed","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"claimBetWin","outputs":[{"name":"amountToSend","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"catId","type":"uint8"},{"name":"teamAbbr","type":"string"}],"name":"setChampionTeam","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"team","type":"string"}],"name":"getTeamId","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"amount","type":"uint256"}],"name":"DonationCheckedout","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"},{"indexed":false,"name":"tId","type":"uint256"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"NewBet","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"reward","type":"uint256"}],"name":"RewardSent","type":"event"},{"anonymous":false,"inputs":[],"name":"RewardUnSufficient","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"bonus","type":"uint256"}],"name":"BonusSent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"bonus","type":"uint256"}],"name":"BonusNotSent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"NewBetAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"},{"indexed":false,"name":"teamId","type":"uint8"}],"name":"ChampionSet","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"}],"name":"BetClosed","type":"event"}]
+  </p>
+<img src="./img/pcwallet1.jpg">
+<h3>Save contract</h3> 
+<img src="./img/pcwallet2.jpg">
+<h3>Select function</h3> 
+<img src="./img/pcwallet3.jpg">
+<h2>In 2018, Eastern: BOS VS CLE  Western:HOU vs GSW. <p class="w3-red">ONLY abbr is valid</p></h2>
+  <table class="w3-table-all">
+    <thead>
+      <tr class="w3-teal">
+        <th>Abbr.</th>
+        <th>Full name</th>
+        <th>中文</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>HOU</td>
+      <td>Houston Rockets</td>
+      <td>休斯顿火箭</td>
+    </tr>
+    <tr>
+      <td>GSW</td>
+      <td>Golden State Warriors</td>
+      <td>金州勇士</td>
+    </tr>
+    <tr>
+      <td>BOS</td>
+      <td>Boston Celtics</td>
+      <td>波士顿凯尔特人</td>
+    </tr>
+	    <tr>
+      <td>CLE</td>
+      <td>Cleveland Cavaliers</td>
+      <td>克里夫兰骑士</td>
+    </tr>
+  </table>
+<img src="./img/pcwallet4.jpg">
+<h4>ONLY if you Win and get notice from Website,  please claim your bonus as below. otherwise, you will pay GAS but get nothing back.
+<img src="./img/pcwallet4.jpg">
+
+</div>
+
+
+<div class="w3-padding w3-card-2" style="margin-left:165px" id="other">
+
+</div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-indigo w3-padding-16">
+  <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">BiTrust.top</a></p>
+</footer>
+
+
+</body>
+</html>
