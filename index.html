@@ -36,55 +36,66 @@
 
 <!-- Page content -->
 <!-- The App Section -->
+
 <div id="nba" class="w3-padding-64 w3-white">
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
   <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img src="./img/nba.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+        <img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
     <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>2018 NBA playoff bet -- based on smart contract</b></h1>
-      <h1 class="w3-xxxlarge w3-text-green"><b>Who will be EAST/WEST/FINAL champion?</b></h1>
- 
-	  <div class="w3-bar w3-white">
-  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('intro')">Introduction</button>
-  <button class="w3-bar-item w3-button w3-blue" onclick="switchTab('contract')">Contract</button>
-  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('logs')">Stats</button>
-</div>
+      <h1 class="w3-xxxlarge"><b>2018 NBA playoff bet -- based on smart contract</b></h1>
+      <h1 class="w3-xxlarge w3-text-green"><b>Who will be champion?</b></h1>
+		<div class="w3-bar w3-white">
+		  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('intro')">Introduction</button>
+		  <button class="w3-bar-item w3-button w3-blue" onclick="switchTab('contract')">Contract</button>
+		  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('logs')">Stats</button>
+		</div>
+	</div>
 
 <div id="intro" class="w3-container nba">
-  <h2>Bet Champion, Get bonus and BTT rewards.</h2>
+  <h2 class="w3-center">Bet Champion, Get bonus and BTT rewards.</h2>
    
   <h3  class="w3-border-bottom w3-hover-border-red"> Eastern Final</h3>
-  <div class="w3-half">
-  <div class="w3-display-container w3-hover-opacity w3-center">
-  <img src="./img/bos.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">2</span>
-   <p class="w3-xlarge">BOS</p>
-   
-   </div>
-</div>
-<div class="w3-half">
+	<div class="w3-half">
+	<div class="w3-display-container w3-hover-opacity w3-center">
+	<img src="./img/bos.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">2</span>
+	<p class="w3-xlarge">BOS</p>
+	</div>
+	</div>
+	<div class="w3-half">
 
-   <div class="w3-display-container w3-hover-opacity w3-center">
-  <span class="w3-badge w3-green w3-xxlarge">0</span><img src="./img/cle.jpg" alt="boston">
+		<div class="w3-display-container w3-hover-opacity w3-center">
+		<span class="w3-badge w3-green w3-xxlarge">0</span><img src="./img/cle.jpg" alt="boston">
 
-  <p class="w3-xlarge">CLE</p>
-</div>
-</div>
- <h3  class="w3-border-bottom w3-hover-border-red"> Western Final</h3>
- <div class="w3-half">
+		<p class="w3-xlarge">CLE</p>
+		</div>
+	</div>
+	<h3  class="w3-border-bottom w3-hover-border-red"> Western Final</h3>
+	<div class="w3-half">
   
-  <div class="w3-display-container w3-hover-opacity w3-center">
-  <img src="./img/hou.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">1</span>
-   <p class="w3-xlarge">HOU</p>
-   
-   </div>
-</div>
-<div class="w3-half">
+		<div class="w3-display-container w3-hover-opacity w3-center">
+		<img src="./img/hou.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">1</span>
+		<p class="w3-xlarge">HOU</p>
+	   
+		</div>
+	</div>
+	<div class="w3-half">
 
-   <div class="w3-display-container w3-hover-opacity w3-center">
-  <span class="w3-badge w3-green w3-xxlarge">1</span><img src="./img/gsw.jpg" alt="boston">
+		<div class="w3-display-container w3-hover-opacity w3-center">
+		<span class="w3-badge w3-green w3-xxlarge">1</span><img src="./img/gsw.jpg" alt="boston">
 
-  <p class="w3-xlarge">GSW</p>
+		<p class="w3-xlarge">GSW</p>
+		</div>
+	</div>
 </div>
-</div>
-</div>
+
 
 <div id="contract" class="w3-container nba" style="display:none">
   <h2>Qtum Contract Address</h2>
@@ -121,24 +132,15 @@ function switchTab(cityName) {
 }
 </script>
 
-<a href="learnmore.html#NBA" class="w3-green w3-bar-item w3-button">Learn More</a>
-     
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="./img/nba.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
-      <div class="w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
-          <i class="fa fa-download"></i> Download Application
-        </button>
-        <img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
-      </div>
-    </div>
+	<a href="learnmore.html#NBA" class="w3-green w3-bar-item w3-button">Learn More</a>
+
   </div>
 </div>
-
+</div>
 
 <!-- Features Section -->
 <div id="reward" class="w3-container w3-padding-64 w3-dark-grey">
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
   <h1 class="w3-jumbo"><b>BTT Rewarding Plan</b></h1>
   <p>rewarding as crownsale</p>
   <div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue">
@@ -154,9 +156,11 @@ function switchTab(cityName) {
   <p>User who introduce BiTrust in Forum, Blog, Facebook, Twitter, will get reward depends on influence</p>
 </div>
 </div>
+</div>
 
 <!-- Clarity Section -->
 <div id="worldcup" class="w3-padding-64 w3-light-grey">
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
   <div class="w3-row-padding">
     <div class="w3-col l4 m6">
       <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="./img/worldcup.jpg" alt="App" width="335" height="471">
@@ -167,7 +171,9 @@ function switchTab(cityName) {
 
     </div>
   </div>
+  </div>
 </div>
+
 <!-- Footer -->
 <footer class="w3-center w3-indigo w3-padding-16">
   <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">BiTrust.top</a></p>
