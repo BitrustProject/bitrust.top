@@ -1,16 +1,16 @@
 
 <!DOCTYPE html>
 <html>
-<title>BiTrust - Trust based on BlockChain Smart Contract. NBA playoff bet, Worldcup bet</title>
+<title>BiTrust - Trust based on BlockChain</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>BiTrust.top</b></a>
+    <img class="w3-image" src="img/bitrust.jpg" alt="logo"><a href="#home" class="w3-bar-item w3-button"><b>BiTrust.top</b></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#home" class="w3-bar-item w3-button">BTT</a>
@@ -18,7 +18,7 @@
 	   <a href="#worldcup" class="w3-bar-item w3-button">Worldcup</a>
       <a href="#reward" class="w3-bar-item w3-button">Rewarding Plan</a>
       <a href="https://github.com/BitrustProject" class="w3-bar-item w3-button">Github</a>
-	
+	  <a href="./cn/index.html" class="w3-bar-item w3-button">中文版</a>
     </div>
   </div>
 </div>
@@ -42,12 +42,6 @@
   <div class="w3-row-padding">
     <div class="w3-col l4 m6">
       <img src="./img/nba.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
-      <div class="w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
-          <i class="fa fa-download"></i> Download Application
-        </button>
-        <img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
-      </div>
     </div>
     <div class="w3-col l8 m6">
       <h1 class="w3-xxxlarge"><b>2018 NBA playoff bet -- based on smart contract</b></h1>
@@ -100,27 +94,26 @@
 <div id="contract" class="w3-container nba" style="display:none">
   <h2>Qtum Contract Address</h2>
   <h3>3b1c563849e90449b1c6435b7552d02259efd7f8</h3> 
-    <button class="w3-bar-item w3-button w3-indigo">ABI</button>
-  <button class="w3-bar-item w3-button w3-blue" onclick="copyText()">Copy</button>
-  <p class="w3-code" id="abi">[{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betEastChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"address"}],"name":"userBetsForTeam","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"tokenAddr","type":"address"}],"name":"setTokenAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betWestChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"name":"teamAmountForBets","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"percent","type":"uint256"}],"name":"setDonationPercent","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"amountForBets","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betFinalChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"t1","type":"string"},{"name":"t2","type":"string"},{"name":"t3","type":"string"},{"name":"t4","type":"string"}],"name":"resetTeams","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"donationPercent","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"catId","type":"uint8"},{"name":"amountToRetrive","type":"uint256"}],"name":"setBetClosed","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"claimBetWin","outputs":[{"name":"amountToSend","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"catId","type":"uint8"},{"name":"teamAbbr","type":"string"}],"name":"setChampionTeam","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"team","type":"string"}],"name":"getTeamId","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"amount","type":"uint256"}],"name":"DonationCheckedout","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"},{"indexed":false,"name":"tId","type":"uint256"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"NewBet","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"reward","type":"uint256"}],"name":"RewardSent","type":"event"},{"anonymous":false,"inputs":[],"name":"RewardUnSufficient","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"bonus","type":"uint256"}],"name":"BonusSent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"bonus","type":"uint256"}],"name":"BonusNotSent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"NewBetAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"},{"indexed":false,"name":"teamId","type":"uint8"}],"name":"ChampionSet","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"}],"name":"BetClosed","type":"event"}]
-  </p>
-  <textarea id="input" style="display:none">hidden text area</textarea>
+  <h2>ABI</h2>
+ 
+  <iframe src="abi.html" width="600" height="300">
+  </iframe> <button class="w3-bar-item w3-button w3-blue" onclick="copyText()">Copy</button>
 </div>
 
 <div id="logs" class="w3-container nba" style="display:none">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
+  <h2>Stats</h2>
+  <p>Stats of the contract.</p>
 </div>
 
 <script>
 function copyText() {
-      var text = document.getElementById("abi").innerText;
-      var input = document.getElementById("input");
-      input.value = text; 
-	  input.focus();
-      input.select(); 
-      document.execCommand("copy");
-      alert("successfully copied");
+	var iframeElement = document.getElementsByTagName('iframe')[0];
+	var iframeWindow = iframeElement.contentWindow;
+    iframeWindow.document.execCommand('selectAll',false,'');
+    if(iframeWindow.document.execCommand("copy"))
+		alert("successfully copied");
+	else
+	  alert("please copy it manually");
     }
 function switchTab(cityName) {
     var i;
