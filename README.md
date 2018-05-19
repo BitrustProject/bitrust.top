@@ -1,2 +1,2 @@
 # bitrust.top
-website of <a href="bitrust.top">BiTrust.top</a>
+website of <a href="http://www.bitrust.top">BiTrust.top</a>
