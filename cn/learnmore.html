@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<title>BiTrust - Trust based on BlockChain</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <img class="w3-image" src="img/bitrust.jpg" alt="logo"><a href="#home" class="w3-bar-item w3-button"><b>BiTrust.top</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="./index.html#home" class="w3-bar-item w3-button">BTT</a>
+	  <a href="./index.html#nba" class="w3-bar-item w3-button">NBA 季后赛竞猜</a>
+	   <a href="./index.html#worldcup" class="w3-bar-item w3-button">世界杯竞猜</a>
+      <a href="./index.html#reward" class="w3-bar-item w3-button">代币奖励计划</a>
+      <a href="https://github.com/BitrustProject" class="w3-bar-item w3-button">Github</a>
+	  <a href="../learnmore.html" class="w3-bar-item w3-button">English</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<!-- The App Section -->
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
+<div class="w3-sidebar w3-bar-block w3-theme w3-card-2" style="width:165px;height:200px">
+  
+  <a href="#nba" class="w3-bar-item w3-button">NBA季后赛竞猜</a>
+</div>
+
+<div class="w3-padding w3-card-2" style="margin-left:165px" id="nba">
+<h2>NBA季后赛竞猜</h2>
+<h3>介绍</h3>
+	<div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+    <h4>竞猜什么？</h4>
+    <p>1, NBA 季后赛东部冠军.  2, NBA 季后赛西部冠军.  3, NBA 总冠军.  2018年</p>
+  </div>
+  <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+  
+    <h4>奖金的算法</h4>
+	<p>以东部决赛为例，假设 骑士 获得冠军:</p>
+    <p>假设 A = 你所竞猜的骑士队的总额</p>
+	<p>假设 T = 所有人竞猜的骑士队的总额</p>
+	<p>假设 O = 所有人竞猜东部决赛的总额</p>
+	<p>最终奖金 = A 乘以 O 再除以 T 
+  </div>
+  <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+    <h4>有手续费吗? </h4>
+    <p>跟合约交互，需要付GAS费给矿工。除此之外，如果你最后竞猜胜利，那么结算时，系统默认捐赠1% 给合约。这不是强制的，你可以通过操作合约的接口:setDonationPercent 来设置捐赠比例。因为编程方便，系统会将你输入的数值减去1作为最终的捐赠比例。所以如果你完全不想捐赠，请输入1 。 设置过程也需要付GAS</p>
+  </div>
+  <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+  
+    <h4>何时开始竞猜？</h4>
+    <p>每个赛季，最后四支队伍确定以后</p>
+  </div>
+    <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+    <h4>合适停止竞猜</h4>
+    <p>任何一支队伍，获得了3场胜利以后，即停止</p>
+  </div>
+      <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+    <h4>BTT奖励?</h4>
+    <p>只要参与就有奖励，1个Qtum奖励一个BTT. 如果竞猜获得奖金(包含本金)，按同样比例奖励BTT.</p>
+  </div>
+  <h3>怎样参与? </h3>
+<a href="https://qtumeco.io/wallet" target="_blank">下载量子链钱包 </a>
+<h4>打开钱包，将合约地址和ABI粘贴</h4> 
+ <h3>合约地址</h3>
+ <p class="w3-code"> 3b1c563849e90449b1c6435b7552d02259efd7f8</p> 
+ <h3>ABI</h3> 
+ <p class="w3-code" id="abi">[{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betEastChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"address"}],"name":"userBetsForTeam","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"tokenAddr","type":"address"}],"name":"setTokenAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betWestChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"name":"teamAmountForBets","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"percent","type":"uint256"}],"name":"setDonationPercent","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"amountForBets","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"teamAbbr","type":"string"}],"name":"betFinalChampionOfNBAPlayOff","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"t1","type":"string"},{"name":"t2","type":"string"},{"name":"t3","type":"string"},{"name":"t4","type":"string"}],"name":"resetTeams","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"donationPercent","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"catId","type":"uint8"},{"name":"amountToRetrive","type":"uint256"}],"name":"setBetClosed","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"claimBetWin","outputs":[{"name":"amountToSend","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"catId","type":"uint8"},{"name":"teamAbbr","type":"string"}],"name":"setChampionTeam","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"team","type":"string"}],"name":"getTeamId","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"amount","type":"uint256"}],"name":"DonationCheckedout","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"},{"indexed":false,"name":"tId","type":"uint256"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"NewBet","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"reward","type":"uint256"}],"name":"RewardSent","type":"event"},{"anonymous":false,"inputs":[],"name":"RewardUnSufficient","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"bonus","type":"uint256"}],"name":"BonusSent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"bonus","type":"uint256"}],"name":"BonusNotSent","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"sender","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"NewBetAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"},{"indexed":false,"name":"teamId","type":"uint8"}],"name":"ChampionSet","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"catId","type":"uint8"}],"name":"BetClosed","type":"event"}]
+  </p>
+<img src="../img/pcwallet1.jpg">
+<h3>保存合约 方便后续使用</h3> 
+<img src="../img/pcwallet2.jpg">
+<h3>选择功能接口</h3> 
+<img src="../img/pcwallet3.jpg">
+<h2>2017-2018赛季, 东部: BOS VS CLE  西部:HOU vs GSW. <p class="w3-red">只接受三字母的简称: Abbr </p></h2>
+  <table class="w3-table-all">
+    <thead>
+      <tr class="w3-teal">
+        <th>Abbr.</th>
+        <th>Full name</th>
+        <th>中文</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>HOU</td>
+      <td>Houston Rockets</td>
+      <td>休斯顿火箭</td>
+    </tr>
+    <tr>
+      <td>GSW</td>
+      <td>Golden State Warriors</td>
+      <td>金州勇士</td>
+    </tr>
+    <tr>
+      <td>BOS</td>
+      <td>Boston Celtics</td>
+      <td>波士顿凯尔特人</td>
+    </tr>
+	    <tr>
+      <td>CLE</td>
+      <td>Cleveland Cavaliers</td>
+      <td>克里夫兰骑士</td>
+    </tr>
+  </table>
+<img src="../img/pcwallet4.jpg">
+<h4>只有再你竞猜胜利时，才需要按照如下领取奖金。否则只会白白付了GAS.
+<img src="../img/pcwallet4.jpg">
+
+</div>
+
+
+<div class="w3-padding w3-card-2" style="margin-left:165px" id="other">
+
+</div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-indigo w3-padding-16">
+  <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">BiTrust.top</a></p>
+</footer>
+
+
+</body>
+</html>
