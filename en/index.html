@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<title>BiTrust - Trust based on Qtum Smart Contract</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <img class="w3-image" src="../img/bitrust.jpg" alt="logo"><a href="#home" class="w3-bar-item w3-button"><b>BiTrust.top</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">BTT</a>
+	  <a href="#nba" class="w3-bar-item w3-button">NBA playoff</a>
+	   <a href="#worldcup" class="w3-bar-item w3-button">Worldcup</a>
+      <a href="#reward" class="w3-bar-item w3-button">Rewarding Plan</a>
+      <a href="https://github.com/BitrustProject" class="w3-bar-item w3-button">Github</a>
+	  <a href="../index.html" class="w3-bar-item w3-button">中文版</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="w3-indigo">
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="../img/architect.jpg" alt="Architecture">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BTT</b></span> <span class="w3-hide-small w3-text-white" style="text-shadow:2px 2px 0 #444">A BiTrust Token based on Qtum</span></h1>
+<a href="https://github.com/BitrustProject/TokenContract/blob/master/BiTrust-Token-whitepaper.md" class="w3-indigo w3-bar-item w3-button">Whitepaper</a><a href="https://qtum.info/contract/d3717c77839a20416ab087203a54c6a09224b73c" class="w3-green w3-bar-item w3-button">Explorer</a>
+  </div>
+</header>
+</div>
+
+<!-- Page content -->
+<!-- The App Section -->
+
+<div id="nba" class="w3-padding-64 w3-white">
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img src=".../img/nba.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-xxxlarge"><b>2018 NBA playoff bet -- based on smart contract</b></h1>
+      <h1 class="w3-xxlarge w3-text-green"><b>Who will be champion?</b></h1>
+		<div class="w3-bar w3-white">
+		  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('intro')">Introduction</button>
+		  <button class="w3-bar-item w3-button w3-blue" onclick="switchTab('contract')">Contract</button>
+		  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('logs')">Stats</button>
+		</div>
+	</div>
+
+<div id="intro" class="w3-container nba">
+  <h2 class="w3-center">Bet Champion, Get bonus and BTT rewards.</h2>
+  <h3  class="w3-border-bottom w3-hover-border-red"> NBA Playoff Final</h3>
+	<div class="w3-half">
+	<div class="w3-display-container w3-hover-opacity w3-center">
+	<img src=".../img/gsw.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">1</span>
+	<p class="w3-xlarge">GSW</p>
+	</div>
+	</div>
+	<div class="w3-half">
+
+		<div class="w3-display-container w3-hover-opacity w3-center">
+		<span class="w3-badge w3-green w3-xxlarge">0</span><img src=".../img/cle.jpg">
+
+		<p class="w3-xlarge">CLE</p>
+		</div>
+	</div>   
+  <h3  class="w3-border-bottom w3-hover-border-red"> Eastern Final</h3>
+	<div class="w3-half">
+	<div class="w3-display-container w3-opacity w3-center">
+	<img src=".../img/bos.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">3</span>
+	<p class="w3-xlarge">BOS</p>
+	</div>
+	</div>
+	<div class="w3-half">
+
+		<div class="w3-display-container w3-opacity w3-center">
+		<span class="w3-badge w3-green w3-xxlarge">4</span><img src=".../img/cle.jpg">
+
+		<p class="w3-xlarge">CLE</p>
+		</div>
+	</div>
+	<h3  class="w3-border-bottom w3-hover-border-red"> Western Final</h3>
+	<div class="w3-half">
+  
+		<div class="w3-display-container w3-opacity w3-center">
+		<img src=".../img/hou.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">3</span>
+		<p class="w3-xlarge">HOU</p>
+	   
+		</div>
+	</div>
+	<div class="w3-half">
+
+		<div class="w3-display-container w3-opacity w3-center">
+		<span class="w3-badge w3-green w3-xxlarge">4</span><img src=".../img/gsw.jpg" alt="boston">
+
+		<p class="w3-xlarge">GSW</p>
+		</div>
+	</div>
+</div>
+
+
+<div id="contract" class="w3-container nba" style="display:none">
+  <h2>Qtum Contract Address</h2>
+  <h3>3b1c563849e90449b1c6435b7552d02259efd7f8</h3> 
+  <h2>ABI</h2>
+ 
+  <iframe src="../abi.html" width="600" height="300" frameborder="no" border="0">
+  </iframe> <button class="w3-bar-item w3-button w3-blue" onclick="copyText()">Copy</button>
+</div>
+
+<div id="logs" class="w3-container nba" style="display:none">
+  <h2>Stats</h2>
+  <p>Eastern championship bet stoped, total 0.2 Qtum received</p>
+  <p>Western championship bet stoped, total 0.0 Qtum received</p>
+  <p>Eastern championship bet closed, Champion is CLE, you can claim your bonus.</p>
+    <p>Western championship bet closed, Champion is GSW, you can claim your bonus.</p>
+</div>
+
+<script>
+function copyText() {
+	var iframeElement = document.getElementsByTagName('iframe')[0];
+	var iframeWindow = iframeElement.contentWindow;
+    iframeWindow.document.execCommand('selectAll',false,'');
+    if(iframeWindow.document.execCommand("copy"))
+		alert("successfully copied");
+	else
+	  alert("please copy it manually");
+    }
+function switchTab(cityName) {
+    var i;
+    var x = document.getElementsByClassName("nba");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+	<a href="learnmore.html#NBA" class="w3-green w3-bar-item w3-button">Learn More</a>
+
+  </div>
+</div>
+</div>
+
+<!-- Features Section -->
+<div id="reward" class="w3-container w3-padding-64 w3-dark-grey">
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
+  <h1 class="w3-jumbo"><b>BTT Rewarding Plan</b></h1>
+  <p>rewarding as crownsale</p>
+  <div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue">
+  <h4>Development contribution</h4>
+  <p>BTT will be rewarded for developing contract/tools/website.  the NBA contract developers have been rewarded 100,000 BTT(180 locked days). let us know if you have better contract. </p>
+</div>
+  <div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue">
+  <h4>Participating NBA bet</h4>
+  <p>One Qtum get One BTT reward for any participant. Winner's bonus will get reward again with same rate.
+</div>
+<div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue">
+  <h4>Introduce BiTrust.top </h4>
+  <p>User who introduce BiTrust in Forum, Blog, Facebook, Twitter, will get reward depends on influence</p>
+</div>
+</div>
+</div>
+
+<!-- Clarity Section -->
+<div id="worldcup" class="w3-padding-64 w3-light-grey">
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="../img/worldcup.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Russia Worldcup bet</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>coming soon....</b></h1>
+
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-indigo w3-padding-16">
+  <p>Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">BiTrust.top</a></p><p> wechat:BiTrust </p>
+</footer>
+
+
+</body>
+</html>
