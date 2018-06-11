@@ -28,10 +28,24 @@
 <!-- The App Section -->
 <div class="w3-content" style="max-width:1200px;margin-top:59px">
 <div class="w3-sidebar w3-bar-block w3-theme w3-card-2" style="width:165px;height:200px">
-  
+  <a href="#worldcup" class="w3-bar-item w3-button">俄罗斯世界杯冠军竞猜</a>
   <a href="#nba" class="w3-bar-item w3-button">NBA季后赛竞猜</a>
 </div>
-
+<div class="w3-padding w3-card-2" style="margin-left:165px" id="worldcup">
+<h2>俄罗斯世界杯冠军竞猜</h2>
+ <h3>合约地址</h3>
+ <p class="w3-code"> 87fb724d2f01c001df6a5699b5001f3864f635d4</p> 
+ <h3>ABI</h3> 
+  <iframe src="./wcabi.html" width="600" height="300"  frameborder="no" border="0">
+  </iframe> <button class="w3-bar-item w3-button w3-blue" onclick="copyText()">复制</button>
+  
+  <h3>竞猜规则与球队序号<h3>
+   <a href="https://github.com/BitrustProject/worldcup/blob/master/README.md">竞猜规则与球队序号分配</a>
+  <h3>竞猜接口</h3>
+     betChampionTeam(球队序号)
+  <h3>奖金申领接口</h3>
+    claimWinBonus
+</div>
 <div class="w3-padding w3-card-2" style="margin-left:165px" id="nba">
 <h2>NBA季后赛竞猜</h2>
 <h3>介绍</h3>

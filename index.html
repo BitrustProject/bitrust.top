@@ -37,7 +37,46 @@
 
 <!-- Page content -->
 <!-- The App Section -->
+<!-- Clarity Section -->
+<div id="worldcup" class="w3-padding-64 w3-light-grey">
+<div class="w3-content" style="max-width:1200px;margin-top:59px">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="./img/worldcup.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>俄罗斯世界杯竞猜</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>32支球队，谁能问鼎大力神杯？</b></h1>
+		<div class="w3-bar">
+		  <button class="w3-bar-item w3-button w3-blue" onclick="switchTab('intro')">简介</button>
+		  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('contract')">合约</button>
+		  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('logs')">记录</button>
+		</div>
+    </div>
+<div id="intro" class="w3-container nba">
+  <h2 class="w3-center">竞猜规则介绍</h2>
+  <a href="https://github.com/BitrustProject/worldcup/blob/master/README.md">详细规则</a>
+  
+<p class="w3-info"> </p>
+</div>
 
+
+<div id="contract" class="w3-container nba" style="display:none">
+  <h2>合约地址</h2>
+  <h3>87fb724d2f01c001df6a5699b5001f3864f635d4</h3> 
+  <h2>ABI</h2>
+ 
+  <iframe src="./wcabi.html" width="600" height="300"  frameborder="no" border="0">
+  </iframe> <button class="w3-bar-item w3-button w3-blue" onclick="copyText()">复制</button>
+</div>
+
+<div id="logs" class="w3-container nba" style="display:none">
+<h2>当前竞猜倍数:32</h2>
+</div>	
+<a href="learnmore.html#worldcup" class="w3-green w3-bar-item w3-button">了解更多</a>
+  </div>
+  </div>
+</div>
 <div id="nba" class="w3-padding-64 w3-white">
 <div class="w3-content" style="max-width:1200px;margin-top:59px">
   <div class="w3-row-padding">
@@ -46,80 +85,11 @@
     </div>
     <div class="w3-col l8 m6">
       <h1 class="w3-xxxlarge"><b>2018 NBA 季后赛竞猜-基于量子链智能合约</b></h1>
-      <h1 class="w3-xxlarge w3-text-green"><b>谁是冠军?</b></h1>
-		<div class="w3-bar w3-white">
-		  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('intro')">简介</button>
-		  <button class="w3-bar-item w3-button w3-blue" onclick="switchTab('contract')">合约</button>
-		  <button class="w3-bar-item w3-button w3-indigo" onclick="switchTab('logs')">记录</button>
-		</div>
+      <h1 class="w3-xxlarge w3-text-green"><b>竞猜结束，勇士队获得总冠军。</b></h1>
+
 	</div>
 
-<div id="intro" class="w3-container nba">
-  <h2 class="w3-center">竞猜冠军，赢奖金和代币奖励.</h2>
-   <h3  class="w3-border-bottom w3-hover-border-red">总决赛</h3>
-	<div class="w3-half">
-	<div class="w3-display-container w3-hover-opacity w3-center">
-	<img src="./img/gsw.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">4</span>
-	<p class="w3-xlarge">GSW 勇士</p>
-	</div>
-	</div>
-	<div class="w3-half">
 
-		<div class="w3-display-container w3-hover-opacity w3-center">
-		<span class="w3-badge w3-green w3-xxlarge">0</span><img src="./img/cle.jpg">
-
-		<p class="w3-xlarge">CLE 骑士</p>
-		</div>
-	</div>  
-  <h3  class="w3-border-bottom w3-hover-border-red">东部决赛</h3>
-	<div class="w3-half">
-	<div class="w3-display-container w3-opacity w3-center">
-	<img src="./img/bos.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">3</span>
-	<p class="w3-xlarge">BOS 凯尔特人</p>
-	</div>
-	</div>
-	<div class="w3-half">
-
-		<div class="w3-display-container w3-opacity w3-center">
-		<span class="w3-badge w3-green w3-xxlarge">4</span><img src="./img/cle.jpg">
-
-		<p class="w3-xlarge">CLE 骑士</p>
-		</div>
-	</div>
-	<h3  class="w3-border-bottom w3-hover-border-red"> 西部决赛</h3>
-	<div class="w3-half">
-  
-		<div class="w3-display-container w3-opacity w3-center">
-		<img src="./img/hou.jpg" alt="boston"><span class="w3-badge w3-green w3-xxlarge">3</span>
-		<p class="w3-xlarge">HOU 火箭</p>
-	   
-		</div>
-	</div>
-	<div class="w3-half">
-
-		<div class="w3-display-container w3-opacity w3-center">
-		<span class="w3-badge w3-green w3-xxlarge">4</span><img src="./img/gsw.jpg" alt="boston">
-
-		<p class="w3-xlarge">GSW 勇士</p>
-		</div>
-	</div>
-</div>
-
-
-<div id="contract" class="w3-container nba" style="display:none">
-  <h2>合约地址</h2>
-  <h3>3b1c563849e90449b1c6435b7552d02259efd7f8</h3> 
-  <h2>ABI</h2>
- 
-  <iframe src="./abi.html" width="600" height="300"  frameborder="no" border="0">
-  </iframe> <button class="w3-bar-item w3-button w3-blue" onclick="copyText()">复制</button>
-</div>
-
-<div id="logs" class="w3-container nba" style="display:none">
-<p>东部冠军竞猜通道关闭，总额0.2qtum.</p>
-<p>西部冠军竞猜通道关闭，总额0.0qtum.</p>
-<p>东部冠军竞猜结束，骑士队获得冠军.</p>
-</div>
 
 <script>
 function copyText() {
@@ -170,21 +140,7 @@ function switchTab(cityName) {
 </div>
 </div>
 
-<!-- Clarity Section -->
-<div id="worldcup" class="w3-padding-64 w3-light-grey">
-<div class="w3-content" style="max-width:1200px;margin-top:59px">
-  <div class="w3-row-padding">
-    <div class="w3-col l4 m6">
-      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="./img/worldcup.jpg" alt="App" width="335" height="471">
-    </div>
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>俄罗斯世界杯竞猜</b></h1>
-      <h1 class="w3-xxxlarge w3-text-red"><b>敬请期待....</b></h1>
 
-    </div>
-  </div>
-  </div>
-</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-indigo w3-padding-16">
