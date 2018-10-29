@@ -1,0 +1,81 @@
+<div>
+<h1>按要求移动对象</h1>
+
+<p>
+加载过程中，请耐心等待。</p>
+<div style="width:980px;height:680px;display:block" id="ggbApplet"></div>
+<div><h3 id="showresult">this is result</h3></div>
+
+<script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script type="text/javascript">
+function id(x) {
+  if (typeof x == "string") return document.getElementById(x);
+  return x;
+  }
+function 	myUpdateListenerFunction(objname)
+{
+	console.log(objname);
+	if(ggbApplet.getVisible("text5") && ggbApplet.getVisible("text5_1") && ggbApplet.getVisible("text5_2") && ggbApplet.getVisible("text5_3"))
+	{
+	   document.getElementById("showresult").innerHTML = "任务完成！";
+	}
+}
+function ggbOnInit(param) {
+	
+		console.log("ggb init");
+		if(param == 'ggbApplet')
+		{
+		ggbApplet.registerObjectUpdateListener("text5", "myUpdateListenerFunction");
+		ggbApplet.registerObjectUpdateListener("text5_1", "myUpdateListenerFunction");
+		ggbApplet.registerObjectUpdateListener("text5_2", "myUpdateListenerFunction");
+		ggbApplet.registerObjectUpdateListener("text5_3", "myUpdateListenerFunction");
+		}
+	}
+    // Create applet for material_id 17499 from GeoGebra Materials Platform. The second parameter forces not to use webSimple.
+    // The third parameter sets the bordercolor. Additional parameters can be defined as described here: https://www.geogebra.org/manual/en/Reference:Applet_Parameters
+    //var applet1 = new GGBApplet({material_id: "WVGxwKKn", borderColor:"#55FF00"}, true);
+
+    //  when used with Math Apps Bundle, uncomment this:
+    //  applet1.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
+	// Create applet for file ../ggb/sine-curves.ggb
+    // The second parameter forces not to use webSimple (this is necessary when multiple applets are used on one page, if one cannot use webSimple).
+var views = {'is3D': 0,'AV': 1,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'PV': 0,'macro': 0};
+// is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator, DA=Data Analysis, FI=Function Inspector, PV=Python, macro=Macro View
+var parameters1 = {
+"id": "ggbApplet",
+"width":980,
+"height":680,
+"showMenuBar":false,
+"showAlgebraInput":false,
+"showToolBar":true,
+"showToolBarHelp":false,
+"showResetIcon":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":true,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":true,
+"preventFocus":false,
+"language":"en",
+// use this instead of ggbBase64 to load a material from GeoGebra Materials Platform
+// "material_id":12345,
+filename: "./ggb/move.ggb"};
+	
+    var applet = new GGBApplet(parameters1, '5.0', views);
+
+    //  when used with Math Apps Bundle, uncomment this:
+    //  applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
+
+		
+
+
+
+
+
+    window.onload = function() {
+        applet.inject('ggbApplet');
+    }
+
+</script>
+
+</div>

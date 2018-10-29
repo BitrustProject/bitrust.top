@@ -1,0 +1,32 @@
+[FILE]
+TITLE=GeoGebra初级教程
+NAME=ggbbasic.html
+FILETEMPLATE=index.html
+[END]
+[MENU]
+MENUTEMPLATE=<li class="#CUR"><a href="#MENULINK" target="_blank">#MENUNAME</a></li>
+MENUNAME=首页
+MENULINK=http://www.lihongyan.cn
+MENUNAME=GeoGebra教程
+MENULINK=http://www.lihongyan.cn/courses/
+MENUCUR=cur
+MENUNAME=GeoGebra视频教学
+MENULINK=http://www.lihongyan.cn/video/
+MENUNAME=GeoGebra作品
+MENULINK=http://www.lihongyan.cn/works
+[END]
+[LEFTMENU]
+MENUSTART=<dl>
+MENUEND=</dl>
+CATTEMPLATE=<dt>#CATNAME</dt>
+CATNAME=GeoGebra初级教程
+MENUTEMPLATE=<dd class="#CUR"><a href="#MENULINK">#MENUNAME</a></dd>
+MENULINKBASE=http://www.lihongyan.cn/
+MENUCUR=cur
+MENUNAME=移动图形
+MENULINK=courses/index.html
+DATAIN=data/ggbbasic_move
+MENUNAME=建造几何图形
+MENULINK=courses/ggbbasic_build.html
+DATAIN=data/ggbbasic_build
+[]
