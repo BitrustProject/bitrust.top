@@ -49,7 +49,7 @@ function resetGame() {
     congra.classList.add("hidden");
     resetButton.classList.add("disabled")
     score.innerHTML = 0;
-    lv.innerHTML = 1;
+    level.innerHTML = 1;
     hits = 0;
     speed = speedbase;
     var boxes = document.querySelectorAll("#box > div");
