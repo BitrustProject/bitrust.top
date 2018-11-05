@@ -60,7 +60,7 @@ function resetGame() {
     startGame();
 }
 
-function keyboardInput() {
+function keyboardInput(event) {
     if (event.keyCode === 27) {
         return endGame();
     };
